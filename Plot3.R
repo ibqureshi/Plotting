@@ -14,4 +14,7 @@ title(main="Energy Sub Metering")
 lines(datetime, sub$Sub_metering_2, col="red")
 lines(datetime, sub$Sub_metering_3, col="blue")
 
+legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, 
+       legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+
 dev.off()
